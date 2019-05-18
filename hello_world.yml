@@ -5,3 +5,8 @@
       debug:
         msg: "Hello World!"
 
+- name: Add sudoers
+  copy:
+    src: files/sfdcdeploy
+    dest: /etc/sudoers.d/sfdcdeploy
+    mode: 0440
